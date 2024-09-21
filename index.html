@@ -11,7 +11,7 @@
   <div class="container mt-5">
     <h2 class="text-center text-pink mb-4">Love Club Admin Panel</h2>
 
-    <form id="girlProfileForm" class="card p-4 shadow">
+    <form id="girlProfileForm" class="card p-4 shadow" enctype="multipart/form-data">
       <!-- Profile Picture -->
       <div class="mb-3">
         <label class="form-label">Profile Picture</label>
@@ -52,9 +52,21 @@
           <option value="Wellness Guide">Wellness Guide</option>
           <option value="Relationship Advice">Relationship Advice</option>
           <option value="Fitness Trainer">Fitness Trainer</option>
-          <!-- More options -->
+          <option value="Career Counseling">Career Counseling</option>
+          <option value="Life Coach">Life Coach</option>
+          <option value="Dietitian/Nutritionist">Dietitian/Nutritionist</option>
+          <option value="Financial Advisor">Financial Advisor</option>
+          <option value="Spiritual Guide">Spiritual Guide</option>
+          <option value="Yoga Instructor">Yoga Instructor</option>
+          <option value="Mental Health Support">Mental Health Support</option>
+          <option value="Beauty Expert">Beauty Expert</option>
+          <option value="Fashion Stylist">Fashion Stylist</option>
+          <option value="Public Speaking Coach">Public Speaking Coach</option>
+          <option value="Personal Development Coach">Personal Development Coach</option>
+          <option value="Parenting Advisor">Parenting Advisor</option>
         </select>
       </div>
+      
 
       <div class="mb-3">
         <label for="introduction" class="form-label">Introduction</label>
@@ -67,6 +79,13 @@
         <input type="text" class="form-control mb-2" id="question1" placeholder="Question 1" required>
         <input type="text" class="form-control mb-2" id="question2" placeholder="Question 2" required>
         <input type="text" class="form-control mb-2" id="question3" placeholder="Question 3" required>
+      </div>
+
+      <!-- Voice Recording Upload -->
+      <div class="mb-3">
+        <label for="voiceRecording" class="form-label">Voice Recording</label>
+        <input type="file" class="form-control" id="voiceRecording" accept="audio/*" required>
+        <small class="text-muted">Upload your voice recording (supported formats: .mp3, .wav).</small>
       </div>
 
       <!-- Loading Bar -->
