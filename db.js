@@ -76,7 +76,7 @@ document
 
     // Function to save profile data
     const saveProfileData = (voiceURL = "") => {
-      profileData.voiceURL = voiceURL;
+      profileData.voiceURL = voiceURL; // Add voiceURL to the profile data
       set(newProfileRef, profileData)
         .then(() => {
           // Hide loading bar and show success message
